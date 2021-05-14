@@ -1,0 +1,19 @@
+<div class="show_user">
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <h1>
+          <%= gravatar_for @user %>
+          <%= @user.name %>
+        </h1>
+      </section>
+    </aside>
+  </div>
+  <p>
+    <b>
+      <%= t('.email') %>
+    </b>
+    <%= @user.email %>
+  </p>
+  <%= link_to t('.work'), work_path, class: "btn btn-lg btn-primary" %>
+</div>

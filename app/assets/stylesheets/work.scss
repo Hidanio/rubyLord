@@ -1,0 +1,26 @@
+// Place all the styles related to the work controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.left_controls {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_diag{
+  display: none;
+}
+
+.image .image_display .img-left-side{
+  display: none;
+}
+
+.image .image_display .img-right-side{
+  display: none;
+}
+
+.common_value{
+  display: none;
+}
+
+
