@@ -5,7 +5,7 @@ class WorkController < ApplicationController
   def index
     @images_count = Image.all.count
     @selected_theme = t(".def_select_theme")
-    @selected_image_name = 'pizza'
+    @selected_image_name = ' '
     @values_qty = Value.all.count
     @current_locale = I18n.locale
     session[:selected_theme_id] = @selected_theme # to display nothing

@@ -3,7 +3,8 @@
  */
 main {
   /*background-color: #eee;*/
-    background-color: #dbeeca;
+    background-color: #383d48;
+    color: white;
   width: 100%;
   }
 header {
@@ -24,16 +25,18 @@ header {
     margin-bottom: 30px;
     position: relative;
 }
-
+body{
+    height: 100%;
+}
 
 ul.nav li {
   display: inline;
 }
+
 ul.nav li a {
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #766AD0;
   text-decoration: none;
-  text-shadow: 0 1px 0 white;
 }
 .flash_notice, .flash_alert {
   padding: 8px 35px 8px 14px;
@@ -57,7 +60,9 @@ ul.nav li a {
   border-color: #eed3d7;
   color: #b94a48;
 }
-
+.header{
+    color: #766AD0;
+}
 .headerList {
     /*margin: 0; !* Обнуляем значение отступов *!*/
     /*padding: 4px; !* Значение полей *!*/
@@ -255,8 +260,9 @@ h1 {
 
 footer {
     padding: 40px 0;
-    background: #607268;
-    color: white;
+    background: #383d48;
+    color: #766AD0;
+    flex: 0 0 auto;
 }
 .footer-col {
     width: 33.3333333333%;
@@ -275,4 +281,8 @@ footer {
 .social-bar-wrap a {
     padding: 0 7px;
     font-size: 18px;
+}
+
+.dark-color-text{
+    color: black;
 }

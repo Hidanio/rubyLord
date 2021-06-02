@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '2.7.2'
 # Icons fonts
 gem 'font-awesome-sass' #, '~> 4.6.2'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
@@ -34,6 +34,7 @@ gem 'bootstrap', '~> 5.0.0.beta2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'kaminari'
+gem 'wdm', '>= 0.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

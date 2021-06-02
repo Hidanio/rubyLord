@@ -1,14 +1,14 @@
 <nav>
-  <ul class="nav navbar-nav pull-right">
-    <li>
+  <ul class="navbar navbar-expand-lg navbar-light bg-light header">
+    <li class="nav-item">
       <%= link_to t('.home'), root_path %>
     </li>
-    <li>
+    <li class="nav-item">
       <%= link_to t('.help'), main_help_path %>
     </li>
-    <li>    <p class="locale">
-      <%= link_to image_tag("Russia.jpg", alt:"", style: "width: 5%; height: 5%", title: "Русский"),locale: :ru %>
-      <%= link_to image_tag("United_Kingdom.jpg", alt:"", style: "width: 6%; height: 6%", title: "English"),locale: :en %>
+    <li>    <p class="locale nav-item">
+      <%= link_to image_tag("Russia.jpg", alt:"", style: "width: 10%; height: 10%", title: "Русский"),locale: :ru %>
+      <%= link_to image_tag("United_Kingdom.jpg", alt:"", style: "width: 10%; height: 10%", title: "English"),locale: :en %>
       <b>
         <%= I18n.locale %>
       </b></li>
@@ -18,14 +18,14 @@
       </li>
       <%= gravatar_for current_user %>
       <li class="dropdown" id="fat-menu">
-        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
           <p>
             <%= t('.person') %>
             <b class="caret"></b>
           </p>
         </a>
         <ul class="dropdown-menu">
-          <li>
+          <li class="dark-color-text">
             <%= link_to t('.profile'), current_user %>
           </li>
           <li>

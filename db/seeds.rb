@@ -23,7 +23,7 @@ Image.create([
                {name: 'Назгул', file: 'nazgul_art.jpg', theme_id: 5},
                {name: 'Саурон', file: 'Sauron_art.jpg', theme_id: 5},
                {name: 'Саурон', file: 'Sauron_art2.jpg', theme_id: 5},
-               {name: 'Леголас', file: 'sauron_cosplay.jpg', theme_id: 6},
+               {name: 'Косплей Саурона', file: 'sauron_cosplay.jpg', theme_id: 6},
                {name: 'Явление Саурона', file: 'sauron_eye.jpg', theme_id: 3},
                {name: 'Постер к сериалу: Властелин Колец', file: 'the-lord-of-the-rings-poster.jpg', theme_id: 4},
                {name: 'Саурон до своего падения', file: 'young_sauron.jpg', theme_id: 3},
