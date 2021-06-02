@@ -3,13 +3,14 @@
   <div class="row">
     <div class="col-md-3">
       <div class="left_controls">
-        <div class="select_theme">
+        <ul>
+        <li class="select_theme buttons_col">
           <%= render 'work/button_theme_select', locale: @current_locale %>
-        </div>
-        <div class="modal_list_results">
+        </li>
+        <li class="modal_list_results buttons_col">
           <%= render 'work/button_list_results', locale: @current_locale %>
           <br/>
-        </div>
+        </li>
         <span class="common_value">
             <%= t('.common_value') %>
           <h2 class="common" title="Common value"></h2>
@@ -20,6 +21,7 @@
               <%= @values_qty.round %>
             </h2>
         </span>
+        </ul>
       </div>
     </div>
     <div class="col-md-9">

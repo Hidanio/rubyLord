@@ -1,46 +1,77 @@
-<nav>
-  <ul class="navbar navbar-expand-lg navbar-light bg-light header">
-    <li class="nav-item">
-      <%= link_to t('.home'), root_path %>
-    </li>
-    <li class="nav-item">
-      <%= link_to t('.help'), main_help_path %>
-    </li>
-    <li>    <p class="locale nav-item">
-      <%= link_to image_tag("Russia.jpg", alt:"", style: "width: 10%; height: 10%", title: "Русский"),locale: :ru %>
-      <%= link_to image_tag("United_Kingdom.jpg", alt:"", style: "width: 10%; height: 10%", title: "English"),locale: :en %>
-      <b>
-        <%= I18n.locale %>
-      </b></li>
-    <% if signed_in? %>
-      <li class="logged">
-        <%= @current_user.email%>
-      </li>
-      <%= gravatar_for current_user %>
-      <li class="dropdown" id="fat-menu">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-          <p>
-            <%= t('.person') %>
-            <b class="caret"></b>
-          </p>
-        </a>
-        <ul class="dropdown-menu">
-          <li class="dark-color-text">
-            <%= link_to t('.profile'), current_user %>
-          </li>
-          <li>
-            <%= link_to t('.settings'), '#' %>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <%= link_to t('.sign_out'), signout_path, method: "delete" %>
-          </li>
-        </ul>
-      </li>
-    <% else %>
-      <li>
-        <%= link_to t('.sign_in'), signin_path %>
-      </li>
-    <% end %>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary row">
+    <div class="col-md-3 row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+      <a class="title_lotr">LOTR</a>
+        </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="col-md-6">
+      <ul class="navbar-nav mr-auto">
+        <div class="col-md-4 color_text">
+        <li class="nav-item">
+          <a>
+            <%= link_to t('.home'), root_path %>
+            <span class="sr-only">(current)</span></a>
+        </li>
+        </div>
+        <div class="col-md-4 color_text">
+        <li class="nav-item">
+          <a>
+            <%= link_to t('.help'), main_help_path %>
+          </a>
+        </li>
+        </div>
+        <div class="col-md-4 color_text">
+        <li class="nav-item">    <p class="locale nav-item">
+          <%= link_to image_tag("Russia.jpg", alt:"", style: "width: 10%; height: 10%", title: "Русский"),locale: :ru %>
+          <%= link_to image_tag("United_Kingdom.jpg", alt:"", style: "width: 10%; height: 10%", title: "English"),locale: :en %>
+          <b>
+            <%= I18n.locale %>
+          </b></li>
+        </div>
+      </ul>
+    </div>
+    <div class="col-md-3 row">
+      <div class="col-md-4 color_text">
+      <% if signed_in? %>
+        <div class="logged">
+          <%= @current_user.email%>
+        </div>
+          </div>
+          <div class="col-md-4">
+        <%= gravatar_for current_user %>
+          </div>
+          <div class="col-md-4">
+        <div class="dropdown" id="fat-menu">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <div>
+            <p>
+              <%= t('.person') %>
+              <b class="caret"></b>
+            </p>
+            </div>
+          </a>
+          <div>
+          <ul class="dropdown-menu">
+            <li class="dark-color-text">
+              <%= link_to t('.profile'), current_user %>
+            </li>
+            <li>
+              <%= link_to t('.settings'), '#' %>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <%= link_to t('.sign_out'), signout_path, method: "delete" %>
+            </li>
+          </ul>
+          </div>
+        </div>
+      <% else %>
+        <div>
+          <%= link_to t('.sign_in'), signin_path %>
+        </div>
+      <% end %>
+    </div>
+        </div>
 </nav>

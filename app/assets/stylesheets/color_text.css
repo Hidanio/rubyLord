@@ -1,0 +1,5 @@
+.color_text a, div{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
